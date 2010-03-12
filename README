@@ -8,7 +8,7 @@ FIXME: write
 
 ## Installation
 
-FIXME: write
+Be sure to first make jogl.jar available on your classpath. Available at http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.1a/
 
 ## License
 
