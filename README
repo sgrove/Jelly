@@ -6,6 +6,12 @@ Jelly is meant to be a configurable status board for large-screen monitors/kiosk
 
 FIXME: write
 
+Evaluate the load-sources line in project.clj. After that, you can call:
+
+(map jelly.graphics/new-window (jelly.rss/retrieve-all-feed-titles))
+
+Each rss headline will appear in its own window and scroll to the right.
+
 ## Installation
 
 Be sure to first make jogl.jar available on your classpath. Available at http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.1a/

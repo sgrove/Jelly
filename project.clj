@@ -10,3 +10,6 @@
                    "/Users/sgrove/code/clojure/jelly/src/jelly/rss.clj"
                    "/Users/sgrove/code/clojure/jelly/src/jelly/graphics.clj"]]
   (map load-file source-files))
+
+; Usage
+(jelly.rss/retrieve-all-feed-titles)

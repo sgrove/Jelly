@@ -7,6 +7,8 @@
 (def feed-urls ["http://feeds.feedburner.com/SauceLabs?format=xml"
                 "http://news.ycombinator.com/rss"])
 
+(defn get-feeds [] (map get-feed feed-urls))
+
 (def feeds (map get-feed feed-urls))
 
 (defn find-tags-helper [node tag]
@@ -24,3 +26,6 @@
 (defn find-titles [node]
   (find-tags node :title))
 
+(defn retrieve-all-feed-titles []
+  (flatten (map find-titles (map get-feed feed-urls))))
+  
